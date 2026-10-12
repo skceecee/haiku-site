@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Web Page</title>
-    <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"></p>
-<style>
-/* I chose Segoe UI because it was a close second alternative for a font that I felt has the same light and airy yet legible (not too thin) tone as the Haiku. */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-</style>
+    <title>A Poppy Blooms Haiku</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-   <center>
-    <img src="img/AI image.jpg" alt="AI generated image of poppy flower rising out of journal">
+<body>
+ <div class="container">
+    <main>
     <h1>A Poppy Blooms Haiku</h1>
-    <h2>Katsushika Hokusai</h2>
-    <p>I write, erase, rewrite </p>
-       <p>Erase again, and then</p>
-      <p>A poppy blooms.</p> 
-    </center>
-
+    <div class="content">
+        <section class="haiku">
+    <p class="haiku-text">I write, erase, rewrite <br>
+       Erase again, and then <br>
+       A poppy blooms.
+       </p>
+       <p class="author">Katsushika Hokusai</p>
+      </section>
+    
+        <figure class="image">
+    <img src="img/1st prompt.png" alt="AI generated image of poppy flower rising out of journal">
+</figure> 
+           </div>
+         </main>
+      </div>
 </body>
 </html>
