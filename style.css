@@ -1,0 +1,58 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+max-width: 1800px; 
+margin:20px auto 0;
+padding: 0 20px 20px;
+}
+
+h1{
+   
+    text-align: center;
+    font-weight: bold;
+}
+/* Two-column row:haiku left, image right */
+.content {
+    display:grid;
+    grid-template-columns: 350px minmax(0, 1200px); /*fixed haiku column */
+    justify-content:center; /*centers the pair on the page */
+    gap:40px;              /* smaller gap makes image closer to haiku */
+    align-items:start;
+    
+}
+.haiku,
+.image{
+    flex: 1;    /*each column takes half the width */
+}
+.haiku-text{
+    font-size: 30px;
+    line-height: 1.6;
+    color: #33431d;
+    margin-left: 50px;
+    margin-top: 100px;
+
+}
+.author{
+    font-size: 16px;
+    color:#5f5549;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-weight:bold;
+
+}
+.image{
+    margin: 0;
+}
+.image img{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    border-radius: 9px;
+    margin-top: 30px;
+
+
+}
+
+
